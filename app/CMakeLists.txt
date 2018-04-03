@@ -47,3 +47,4 @@ target_link_libraries( # Specifies the target library.
 
 ADD_SUBDIRECTORY(src/main/cpp/native_one)
 ADD_SUBDIRECTORY(src/main/cpp/native_two)
+ADD_SUBDIRECTORY(src/main/cpp/native_thr)

@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         TextView tvThr = (TextView) findViewById(R.id.sample_text_thr);
         tvThr.setText(stringFromJNI());
 
+        // Example of a call to a native method
+        TextView tvFour = (TextView) findViewById(R.id.sample_text_for);
+        tvFour.setText("result: " + NumPlus.getSum(2, 3));
+
 
     }
 
