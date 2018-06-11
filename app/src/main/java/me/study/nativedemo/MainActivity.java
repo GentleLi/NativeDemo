@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.LinkedList;
+
 public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
@@ -32,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
         TextView tvFour = (TextView) findViewById(R.id.sample_text_for);
         tvFour.setText("result: " + NumPlus.getSum(2, 3));
 
+        // Example of a call to a native method
+        TextView tvFive = (TextView) findViewById(R.id.sample_text_five);
+        tvFive.setText("result: " + Calculate.multiple(2.7, 3.6));
+
+
+        LinkedList<String> mLinkList = new LinkedList<>();
 
     }
 
